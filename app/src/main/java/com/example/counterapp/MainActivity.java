@@ -33,8 +33,17 @@ public class MainActivity extends AppCompatActivity {
              public void onClick(View v) {
                  count++;
                  counter.setText(String.valueOf(count));
+
+                 //or alternatively
+                 //counter.setText(""+increaseCouter());
              }
          });
+
+         /*
+         public int increaseCouter(){
+         return count++;
+          */
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
